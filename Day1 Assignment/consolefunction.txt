@@ -1,0 +1,18 @@
+console.info():-Outputs an informational message to the console
+
+console.assert():-Writes an error message to the console if the assertion is false
+
+console.clear():-Clears the console window
+
+console.count():-Logs the number of times that this particular call to count() has been called
+
+console.log():-Outputs a message to the console
+
+console.group():- Creates a new inline group in the console. This indents following console messages
+by an additional level, until console.groupEnd() is called
+
+console.groupEnd():-Exits the current inline group in the console
+
+console.trace():- method displays a trace that show how the code ended up at a certain point.
+
+

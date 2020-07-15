@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Click the button to clear the console:</p>
+
+    <button onclick="myFunction()">
+        Clear Console
+    </button>
+
+    <button onclick="myFunction()">Start Trace</button>
+
+<script>
+
+    console.info("Hello world!");
+
+    console.assert(document.getElementById("demo"), "You have no element with ID 'demo'");
+
+    console.log("Hello! Press the button to clear the console!");
+
+    function myFunction() {
+
+        console.clear();
+            }
+
+    for (i = 0; i < 10; i++) {
+
+        console.count();
+            }
+        console.log("This is out of the group");
+
+        console.group();
+        console.log("Hello this time inside a group!");
+
+        console.groupEnd();
+        console.log(" we are now out of group!!");
+
+// console.trace():- method displays a trace that show how the code ended up at a certain point.
+        function myFunction() {
+            myOtherFunction();
+                }
+
+        function myOtherFunction() {
+            console.trace();
+                }
+
+</script>
+
+</body>
+</html>
+

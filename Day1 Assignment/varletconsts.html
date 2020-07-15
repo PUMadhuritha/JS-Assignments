@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="varfun()">Start var example</button>
+    <button onclick="letfun()">Start let example</button>
+    <button onclick="constfun()">Start const example</button>
+<script>
+    function varfun(){
+        var a =10;
+        console.log(a);  
+        if(true){
+         var a=20;
+         console.log(a); 
+        }
+        console.log(a); 
+        // re-declaration possible in var
+        var b =10;   
+        var b =50;   
+        console.log("value after redeclaration",b); 
+      }
+
+    function letfun(){
+        let a =10;
+        console.log(a); 
+        if(true){
+        let a=20;
+        console.log(a); 
+            }
+        console.log(a); 
+        /*redeclaration not possible in let
+       let b=10;
+        let b =20; //throws syntax error
+        console.log(b);*/ 
+        }
+    function constfun(){
+    const VARIABLE =10;
+    console.log(VARIABLE); 
+    /*MY_VARIABLE =20;  //throws  error
+  console.log(MY_VARIABLE); */
+        }
+    
+</script>
+</body>
+</html>
