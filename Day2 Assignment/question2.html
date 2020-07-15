@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question2</title>
+</head>
+<body>
+    <h2>STRING AND ARRAY METHODS</h2>
+    <script>
+    //SEARCH 
+    // Search method searches a string for a specified value and returns the position
+    // of the match 
+    let text="Hello how are you";
+    console.log(text);
+    console.log("search method:",text.search("is"));
+
+    //SLICE
+    //Slice() extracts a part of a string and returns the extracted part in a new string.
+    let str="Apple,Mango,Orange";
+    console.log("slicing method")
+    console.log(str.slice(6,11));
+    //If a parameter is negative, the position is counted from the end of the string.
+    console.log(str.slice(-18,-12));
+    console.log(str.slice(6));
+    console.log(str.slice(-12));
+
+    //SUBSTRING
+    //substr() Extracts the characters from a string, beginning at a specified start position, and through the specified number of character
+    var ss= text.substr(6,10);
+    console.log("substr method:",ss);
+
+    //SUBSTRING
+    //substring() Extracts the characters from a string, between two specified indices
+    var ss2 = text.substring(12,23);
+    console.log("substring method:",ss2);
+
+    //STARTSWITH
+    //startsWith() Checks whether a string begins with specified characters
+    var sw = text.startsWith("Hello");
+    console.log("startswith method:",sw);
+
+    //REPLACE
+    //replace():-Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced
+    var rp = text.replace("Hello", "how");
+    console.log("replace method:",rp);
+
+    //TRIM()-used to remove spaces
+    var tr= "     Hello     ";
+    console.log("trim method:",tr.trim());
+    
+
+    
+     //ARRAY METHODS
+
+     // toString():-converts an array to a string of (comma separated) array values.
+        var f = ["Banana", "Orange", "Apple", "Mango"];
+        console.log("tostring method:",f.toString());  
+
+    // join():-method also joins all array elements into a string.It behaves just like toString(),
+    // but in addition you can specify the separator
+        var j=f.join(" ; ");
+        console.log("join method:",j);
+
+    // delete is used to remove the specified element from the array
+        delete f[0];
+        console.log("array after deleting first element:",f);
+
+    // splice():-method can be used to add new items to an array.The splice() method returns an array with 
+    //the deleted items.
+        f.splice(2, 0, "Lemon", "Kiwi");
+        console.log("new array",f);
+        var removed = f.splice(2, 2, "Lemon", "Kiwi");
+        console.log("removed:",removed);
+
+    // slice():-method slices out a piece of an array into a new array.
+        var citrus = f.slice(1);
+        console.log("slice method:",citrus);
+
+    // sort():-This method sorts an array alphabetically
+        f.sort();
+        console.log("after sort:",f);
+    </script>
+
+    
+</body>
+</html>
