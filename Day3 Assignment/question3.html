@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question3</title>
+</head>
+<body>
+    <h2>CONDITIONAL STATEMENTS</h2>
+    <h2>GRADE STUDENTS BY THEIR MARKS</h2>
+    <button onclick="usingifelseif()">Using if</button>
+    <button onclick="usingswitch()">Using Switch</button>
+    <button onclick="usingternary()">Using Ternary</button>
+
+    <script>
+        //Using if else if
+        function usingifelseif()
+        {
+        let marks=prompt("enter marks");
+        if(marks>=75 && marks<=100)
+        {
+            console.log(`Marks are ${marks} and grade is A`);
+        }
+        else if(marks>=50 && marks<75)
+        {
+            console.log(`Marks are ${marks} and grade is B`);
+        }
+        else if(marks>=35 && marks<50)
+        {
+            console.log(`Marks are ${marks} and grade is C`);
+        }
+        else
+        {
+            console.log(`Marks are ${marks} and grade is F`);
+        }
+        }
+        
+
+        //USing Switch Statement
+        function usingswitch()
+        {
+        let marks=prompt("enter marks");
+        switch(true)
+        {
+            case marks>=75 && marks<=100:
+            console.log(`Marks are ${marks} and grade is A`);
+            break;
+
+            case marks>=50 && marks<75:
+            console.log(`Marks are ${marks} and grade is B`);
+            break;
+
+            case marks>=35 && marks<50:
+            console.log(`Marks are ${marks} and grade is C`);
+            break;
+
+            default:
+            console.log(`Marks are ${marks} and grade is F`);
+        }
+        }
+
+        //Using Ternary Operator
+        function usingternary()
+        {
+        let marks=prompt("enter marks");
+        let res=(marks>=75 && marks<=100)?`Marks are ${marks} and Grade is A`:
+            (marks>=50 && marks<75)?`Marks are ${marks} and Grade is B`:
+            (marks>=35 && marks<50)?`Marks are ${marks} and Grade is C`:
+            `Marks are ${marks} and grade is F`;
+        console.log(res);
+        }
+
+
+    </script>
+</body>
+</html>
+
+
