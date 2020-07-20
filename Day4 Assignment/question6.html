@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Question6</title>
+    </head>
+<body>
+    <h2>Loop which prompts for a number greater than 100. If the visitor enters another number – ask them
+        to input again.</h2>
+    <script>
+        // do
+        // {
+        //     num=prompt("Enter the number greater than 100");
+        // } while(num<=100);
+        
+        // USING TERNARY OPERATOR
+        function hello()
+        {
+            let num=prompt("Enter the number greater than 100");
+           let res=(num<100)||(num==1)||(num==0)?hello():console.log(num);
+        }
+        hello();
+        
+    </script>
+</body>
+</html>

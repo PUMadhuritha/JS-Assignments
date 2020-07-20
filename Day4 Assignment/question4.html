@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Question4</title>
+    </head>
+    <body>
+        <h2>CALCULATOR</h2>
+        <script>
+            let num1=prompt("enter the 1st number");
+            let num2=prompt("enter the 2nd number");
+            let op=prompt("enter the operation to be performed");
+            switch(op)
+            {
+                case "+":
+                console.log("Addition");
+                console.log(Number(num1)+Number(num2));
+                break;
+
+                case "-":
+                console.log("Subtraction");
+                console.log(Number(num1)-Number(num2));
+                break;
+
+                case "*":
+                console.log("Multiplication");
+                console.log(Number(num1)*Number(num2));
+                break;
+
+                case "/":
+                console.log("Division");
+                console.log(Number(num1)/Number(num2));
+                break;
+
+                case "sqrt":
+                console.log("Square root");
+                console.log(Math.sqrt(num1));
+                console.log(Math.sqrt(num2));
+                break;
+
+                case "%":
+                console.log("Percentage");
+                console.log(Number(num1)%Number(num2));
+                break;
+
+                default:
+                console.log("Try again");
+                break;
+            }
+        </script>
+            
+          </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Question5</title>
+    </head>
+<body>
+    <!-- <h2>SALES</h2> -->
+    <script>
+        let sales=prompt("enter your sales");
+        switch(true)
+        {
+            case(sales>0 && sales<=5000):
+            s1=((2/100)*sales) + +sales;
+            console.log("Total commission earned is: ",s1);
+            break;
+            
+            case(sales>5001 && sales<=10000):
+            s2=((5/100)*sales) + +sales;
+            console.log("Total Commission earned is: ",s2);
+            break;
+            
+            case(sales>10001 && sales<=20000):
+            s3=((7/100)*sales) + +sales;
+            console.log("Total Commission earned is: ",s3);
+            break;
+            
+            case(sales>20000):
+            s4=((10/100)*sales) + +sales;
+            console.log("Total Commission earned is: ",s4);
+            break;
+
+            default:
+            console.log("enter valid sales");
+            break;
+        }
+    </script>
+</body>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> Question 8 </title>
+    </head>
+    <body>
+        <h2>ARROW FUNCTIONS</h2>
+        <script>
+            
+        let ask=(question,yes,no)=>{if(confirm(question)){ yes() }else{ no() }}
+        let yes=()=>alert("You agreed.")
+        let no=()=>alert("You cancelled the execution.")
+        let r=ask("Do you agree?",yes,no);
+        console.log("successfully Executed");
+            
+        </script>   
+    </body>
+</html>
