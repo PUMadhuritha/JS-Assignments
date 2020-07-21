@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <h2>Async Await Fetch</h2>
+    <script>
+        async function fetchtodos(){
+        const resp=await fetch('https://jsonplaceholder.typicode.com/todos');
+        const data=await resp.json();
+        console.log("Original Todos",data);
+        }
+       fetchtodos();
+       
+       const resp=fetch('https://jsonplaceholder.typicode.com/todos?completed=true')
+       .then(response=>response.json())
+       .then(data1=>console.log("Completed Todos",data1))
+       </script>
+       </body>
+</html>

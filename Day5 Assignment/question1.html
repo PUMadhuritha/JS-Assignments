@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 Assignment Question 1</title>
+</head>
+<body>
+    <h2>Array of odd numbers and their squares using higher order functions.</h2>
+    <script>
+        let num=+prompt("enter a positive number");
+        let arr=[];
+        for(let i=0;i<=num;i++)
+        {
+            arr.push(i);
+        }
+        console.log(arr);
+        let odd=arr.filter(el=>el%2!=0);
+        console.log(odd);
+        let oddCubes=arr.filter(el=>el%2!=0).map(el=>el**3);
+        console.log(oddCubes);
+    </script>
+</body>
+</html>
