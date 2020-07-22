@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link rel="stylesheet" href="togglebackground.css">
+</head>
+<body id='att'>
+    <h1 id="title">Day 6 Assignment</h1>
+    <h4 id="time"></h4>
+    
+    <script>
+        const name=prompt("enter your name.","anonymous");
+        title.innerText+=` welcomes ${name}`;
+
+        const ctime=document.getElementById('time');
+        function clock()
+            {
+            let date=new Date();
+            let time=date.toLocaleTimeString();
+            ctime.innerText=time;
+            }
+            setInterval(clock,1000);
+
+            const at=document.getElementById('att');
+            at.classList.toggle('blue');
+            at.classList.toggle('blue');
+            at.classList.toggle('blue');
+            document.write("This is after third toggle");
+            clock();
+    </script>
+</body>
+</html>

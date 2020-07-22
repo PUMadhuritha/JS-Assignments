@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6 Assignment Question1</title>
+</head>
+<body>
+    <h2>Iterate over array of colors and change background of page after 5 seconds</h2>
+    <script>
+        var colors = ["pink", "gray", "yellow", "green"];
+      
+        function changeColor() {
+          setTimeout(function loop() {
+            document.bgColor = colors.shift();
+            if (colors.length) {
+              setTimeout(loop, 5000);
+            }
+          }, 5000);
+        }
+      
+        function start() {
+          setInterval(changeColor(), 20000);
+        }
+      </script>
+      
+      <body onload="start()">
+</html>
+</html>
