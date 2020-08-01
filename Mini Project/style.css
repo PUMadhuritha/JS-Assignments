@@ -1,0 +1,47 @@
+#stopWatch {
+    width: 250px; 
+    height: auto; 
+    text-align: center;
+     display: block; 
+     padding: 5px;
+      margin: 0 auto; }
+ #timer, #fulltime { width: auto;
+     height: auto;
+      padding: 10px; 
+      font-weight: bold; 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: block;
+       border: 1px solid #eee; 
+       text-align: center;
+        box-shadow: 0 0 5px #ccc;
+         background: #fbfbf0;
+          color: brown; 
+          border-bottom:4px solid darkgrey;
+         }
+          button {
+            
+               cursor: pointer; 
+               font-weight: 700; 
+            }
+         #fulltime { 
+                    display:none; 
+                    font-size:16px; 
+                    font-weight:bold; } 
+h4{
+ border-style: double;
+text-align: center;
+text-decoration-color: mediumvioletred;
+text-decoration-style: double;
+border-color: black;
+
+font-size: 30px;
+font: bold;
+color: maroon;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font: outline;
+}
+body{
+    background-color: grey;
+    border-style: solid;
+    border-color: white;
+}
